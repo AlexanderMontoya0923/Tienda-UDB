@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Tienda en Línea - Proyecto en la Nube</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Tienda en Línea UDB</h1>
+        <p>Aplicación web desplegada en la nube</p>
+    </header>
+
+    <main>
+        <!-- Sección de información del grupo -->
+        <section class="grupo">
+            <h2>Integrantes del grupo</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Alexander Montoya</h3>
+                    <p>Rol: Desarrollo</p>
+                </div>
+                <div class="card">
+                    <h3>Gabriela Avendaño</h3>
+                    <p>Rol: Nube / Azure</p>
+                </div>
+                <div class="card">
+                    <h3>Jeferson Romero</h3>
+                    <p>Rol: Documentación</p>
+                </div>
+                <div class="card">
+                    <h3>Grupo Completo</h3>
+                    <p>Rol: Presentación / Video</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de productos -->
+        <section class="tienda">
+            <h2>Productos disponibles</h2>
+            <p>Selecciona un producto y agrégalo al carrito.</p>
+
+            <div class="productos">
+                <div class="producto">
+                    <h3>Cuaderno UDB</h3>
+                    <p class="precio">$3.50</p>
+                    <p>Cuaderno de 100 hojas, ideal para apuntes de clase.</p>
+                    <button class="add-to-cart" data-name="Cuaderno UDB" data-price="3.5">
+                        Agregar al carrito
+                    </button>
+                </div>
+
+                <div class="producto">
+                    <h3>Lápiz mecánico</h3>
+                    <p class="precio">$1.25</p>
+                    <p>Lápiz mecánico 0.7mm con goma integrada.</p>
+                    <button class="add-to-cart" data-name="Lápiz mecánico" data-price="1.25">
+                        Agregar al carrito
+                    </button>
+                </div>
+
+                <div class="producto">
+                    <h3>USB 32 GB</h3>
+                    <p class="precio">$8.99</p>
+                    <p>Memoria USB de 32GB para proyectos y respaldos.</p>
+                    <button class="add-to-cart" data-name="USB 32 GB" data-price="8.99">
+                        Agregar al carrito
+                    </button>
+                </div>
+
+                <div class="producto">
+                    <h3>Audífonos</h3>
+                    <p class="precio">$12.00</p>
+                    <p>Audífonos con micrófono, ideales para clases en línea.</p>
+                    <button class="add-to-cart" data-name="Audífonos" data-price="12">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección del carrito -->
+        <section class="carrito">
+            <h2>Carrito de compras</h2>
+            <p>Aquí verás los productos agregados.</p>
+
+            <ul id="cartItems"></ul>
+
+            <div class="total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+
+            <button id="clearCart">Vaciar carrito</button>
+        </section>
+
+        <!-- Información del proyecto -->
+        <section class="info">
+            <h2>Información del proyecto</h2>
+            <p>
+                Esta es una tienda en línea sencilla desarrollada como parte del
+                proyecto de despliegue de aplicaciones web en la nube.</strong>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Universidad Don Bosco - Proyecto en la Nube</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
